@@ -1,0 +1,39 @@
+/*$myFavoriteWhite: #F5F2D0;
+
+@mixin heading ($bg, $c) {
+  width: 200px;
+  height: 100px;
+  font-family: 'Fantasy';
+
+  background-color: $bg;
+  color: $c;
+}*/
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+/*
+a {
+  color: #00B7FF;
+}
+
+.header {
+  background-color: $myFavoriteWhite;
+}
+
+.navigation {
+  background-color: red;
+
+  p {
+    color: blue;
+  }
+
+  img {
+    
+  }
+}
+
+.title {
+  @include heading(red,  blue)
+}*/

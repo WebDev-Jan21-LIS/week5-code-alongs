@@ -1,0 +1,22 @@
+<header class="header">
+  <h1 class="title">{{title}}</h1>
+</header>
+<nav class="navigation">
+  <p>Welcome to {{title}}</p>
+  {{#if user}}
+    Hello {{user.username}}
+    <form action="/logout" method="POST">
+      <button type="submit">Logout</button>
+    </form>
+    <a href="/private">Secret page</a>
+  {{/if}}
+  <a href="/books">All Books</a>
+  <a href="/books/create">Create Book</a>
+  <a href="/authors/create">Create Author</a>
+
+  {{#unless user}}
+    <a href="/signup">Signup</a>
+    <a href="/login">Login</a>
+  {{/unless}}
+</nav>
+

@@ -1,0 +1,23 @@
+<h1>Create New Book</h1>
+<form action="/books/create" method="POST">
+  <label>Title</label>
+  <input type="text" name="title">
+
+  <label>Author</label>
+ <!-- <input type="text" name="author">-->
+  <select name="author" required>
+    <option value="">Choose Author</option>
+    {{#each authors}}
+      <option value={{id}}>{{name}}</option>
+    {{/each}}
+  </select>
+
+  <label>Description</label>
+  <textarea name="description" cols="30" row="4">
+  </textarea>
+
+  <label>Rate</label>
+  <input type="number" name="rating" min="1" max="10">
+
+  <button type="submit">Create</button>
+</form>

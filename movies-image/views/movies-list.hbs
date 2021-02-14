@@ -1,0 +1,8 @@
+<h2>Movies</h2>
+{{#each movies}}
+  <p>{{title}}</p>
+  <p>{{description}}</p>
+  <img src={{imageUrl}} alt={{title}} />
+{{else}}
+  <p>There are no movies yet.</p>
+{{/each}}
